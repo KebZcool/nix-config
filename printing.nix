@@ -20,14 +20,19 @@
     openFirewall = true;
   };
 
+  # Scanner support
+   # hardware.sane = {
+   #  enable = true;
+
+  };
   networking.firewall = {
     allowedTCPPorts = [ 631 9100 ];
     allowedUDPPorts = [ 631 ];
   };
 
-  # Configuration correcte des utilisateurs et groupes
+  # Configuration des utilisateurs et groupes
   users = {
-    groups.kebzcool = { };  # Définition du groupe
+    groups.kebzcool = { };  
     users.kebzcool = {
       group = "kebzcool";  # Assigne le groupe principal
       extraGroups = [ "lp" "lpadmin" ];  # Ajoute les groupes d'impression
