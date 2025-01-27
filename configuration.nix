@@ -14,7 +14,7 @@
       ./tor.nix
       ./networking.nix  # Import your networking configuration
       ./ssh.nix
-      ./printer.nix
+      ./printing.nix
       ./firewall.nix
       ./ollama.nix
       ./plymouth.nix
