@@ -33,8 +33,8 @@
   #"149.112.112.112"
  ];
 
-  # Set the hostname
-  networking.hostName = "kebzcool";
+  # Configure hostname
+  networking.hostName = "kebOS";
 
   # Enable DHCP on another interface (optional)
   #networking.interfaces.enp4s0.useDHCP = true;
