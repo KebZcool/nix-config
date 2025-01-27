@@ -1,10 +1,12 @@
 # Configuration NixOS avec Flake & Home-manager
 
- Ce dépôt contient ma configuration "basique" de NixOS utilisant flake & Home-manager. 
+ Ce dépôt contient ma configuration de NixOS utilisant flake & Home-manager. 
  
  Il y a certainement des améliorations qui pourraient être apportées alors n'hésitez pas à les suggérer.
  
- Je suis encore en phase d'apprentissage du système et je débute avec home-manager et les modules.
+ Je suis encore en phase d'apprentissage sur NixOS et je débute avec home-manager et les modules.
+
+ Pour mon utilisation personnel, je reste sur une config très basique et simple.
 
 ## Structure des fichiers
 
