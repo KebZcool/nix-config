@@ -23,8 +23,8 @@
   # Scanner support
    # hardware.sane = {
    #  enable = true;
+ # };
 
-  };
   networking.firewall = {
     allowedTCPPorts = [ 631 9100 ];
     allowedUDPPorts = [ 631 ];
