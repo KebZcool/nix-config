@@ -1,18 +1,13 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, lib, ... }:
 
 #---------------------------------------------------------------------
 # Kevin Gaillard
-# 03/01/2025
+# 
 # My personal NIXOS KDE configuration 
 #---------------------------------------------------------------------
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
       ./steam.nix
       ./vmware.nix
@@ -34,7 +29,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.plymouth.enable = true;               # Activates the Plymouth boot splash screen.
-  # boot.plymouth.theme = "breeze";            # Sets the Plymouth theme to "breeze."
+  # boot.plymouth.theme = "breeze";           
   
  # Configuration des paramètres sysctl
   boot.kernel.sysctl = {
@@ -61,7 +56,7 @@
 
   # Enable networking
   # networking.networkmanager.enable = true;
-  # networking.hostName = "nixkeb"; # Define your hostname.
+  # networking.hostName = "kebOS"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Set your time zone.
@@ -126,11 +121,8 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kebzcool = {
     isNormalUser = true;
-    description = "kebzcool";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "render" ];
     packages = with pkgs; [];
-     # Add ssh public key
-    #openssh.authorizedKeys.keys =[""];
   };
 
   # Fonctionnement de Davinci Resolve avec les GPU AMD 
@@ -172,13 +164,6 @@
   # services.openssh.enable = true;
   # settings.PermitRootLogin = "yes";
   # services.openssh.settings.PasswordAuthentication = false;   
-  
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ 2202 ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
