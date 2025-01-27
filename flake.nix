@@ -1,5 +1,5 @@
 {
-  description = "One flake to rule them all";
+  description = "My personal flake configuration";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.11";
