@@ -13,7 +13,7 @@
        pkgs = nixpkgs.legacyPackages.${system};
      in {
     nixosConfigurations = {
-      nixkeb = nixpkgs.lib.nixosSystem {
+      kebOS = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ ./configuration.nix ];
       };
