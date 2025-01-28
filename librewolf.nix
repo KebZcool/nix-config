@@ -19,14 +19,13 @@
       "intl.accept_languages" = "fr-fr,en-us,en";
       "intl.locale.requested" = "fr,en-US";
       
-      # Paramètres de confidentialité
-      "privacy.donottrackheader.enabled" = true;
-      "privacy.fingerprintingProtection" = true;
-      "privacy.resistFingerprinting" = false;
-      "webgl.disabled" = false;
+      # Paramètres de confidentialité (pour firefox)
+      #"privacy.donottrackheader.enabled" = true;
+      #"privacy.fingerprintingProtection" = true;
+      #"privacy.resistFingerprinting" = false;
       
-      # Désactivation des fonctionnalités non désirées
-      "extensions.pocket.enabled" = false;
+      # Désactivation des fonctionnalités non désirées (pour firefox)
+      #"extensions.pocket.enabled" = false;
       
       # Synchronisation (commenté par défaut)
       # "identity.fxaccounts.enabled" = true;
@@ -39,6 +38,11 @@
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
+      DisableFeedbackCommands = true;
+      DisablePocket = true;
+      DisableSetDesktopBackground = true;
+      DisableDeveloperTools = false;
+      DontCheckDefaultBrowser = true;
 
      /* ---- EXTENSIONS ---- */
      # Check about:support for extension/add-on ID strings.
