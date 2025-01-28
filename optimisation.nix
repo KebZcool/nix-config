@@ -16,4 +16,9 @@
      enable = true;
      dates = "weekly";
   };
+    nix = {
+      optimise = {
+	automatic = true;
+	dates = [ "weekly" ];
+  };
 }
