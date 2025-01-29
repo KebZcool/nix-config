@@ -109,10 +109,9 @@
   # services.xserver.libinput.enable = true;
 
    # User account
-  users.users.${userSettings.username} = {
+   users.users.kebzcool = {
     isNormalUser = true;
-    description = userSettings.name;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "render" ];
     packages = with pkgs; [];
     uid = 1000;
   };
