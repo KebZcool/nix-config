@@ -12,14 +12,13 @@
       ./steam.nix
       ./vmware.nix
       ./tor.nix
-      ./networking.nix  # Import your networking configuration
+      ./networking.nix 
       ./ssh.nix
       ./printing.nix
       ./firewall.nix
       ./ollama.nix
       ./plymouth.nix
       ./librewolf.nix
-      ./flatpak.nix
       ./packages.nix
       ./optimisation.nix
     ];
