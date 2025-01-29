@@ -19,16 +19,17 @@
   # Photos
   gimp
   inkscape
+  darktable
   # Médias
   vlc
   freetube
   spotube
-  joplin-desktop
   # Bureautique
   libreoffice-fresh
   hunspell
   hunspellDicts.fr-moderne
   onlyoffice-desktopeditors
+  joplin-desktop
   # Navigateur
   brave
   # Messagerie
