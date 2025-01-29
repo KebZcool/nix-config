@@ -2,8 +2,9 @@
 
 {
   # zRAM Configuration
-  zramSwap.enable = true; 
- 
+  zramSwap.enable = true;
+ };
+
   # Automatic Garbage collection
    nix.gc = {
      automatic = true;
