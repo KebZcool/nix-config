@@ -3,7 +3,6 @@
 {
   # zRAM Configuration
   zramSwap.enable = true;
- };
 
   # Automatic Garbage collection
    nix.gc = {
@@ -21,5 +20,6 @@
       optimise = {
 	automatic = true;
 	dates = [ "weekly" ];
+    };
   };
 }
