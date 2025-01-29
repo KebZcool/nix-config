@@ -21,6 +21,7 @@
       ./librewolf.nix
       ./packages.nix
       ./optimisation.nix
+      ./flatpak.nix
     ];
 
   # Bootloader.
