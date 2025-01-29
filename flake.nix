@@ -34,6 +34,5 @@
         fontPkg = pkgs.intel-one-mono; # Font package
      };
    };
- };
 
 }
