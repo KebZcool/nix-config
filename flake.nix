@@ -22,6 +22,16 @@
       kebzcool = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home.nix ];
+       };
+     };
+      # ----- USER SETTINGS ----- #
+      userSettings = rec {
+        username = "kebzcool"; # username
+        name = "kebzcool"; # name/identifier
+        email = "keb.gaillard@proton.me"; # email (used for certain configurations)
+        dotfilesDir = "~/.dotfiles"; # absolute path of the local repo      
+        font = "Intel One Mono"; # Selected font
+        fontPkg = pkgs.intel-one-mono; # Font package
      };
    };
  };
