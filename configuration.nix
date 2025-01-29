@@ -49,15 +49,6 @@
     "net.ipv4.icmp_ignore_bogus_error_responses" = 1;
   };
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  # networking.networkmanager.enable = true;
-  # networking.hostName = "kebOS"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
@@ -106,7 +97,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
@@ -117,11 +107,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.kebzcool = {
+   # User account
+  users.users.${userSettings.username} = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "render" ];
+    description = userSettings.name;
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    uid = 1000;
   };
 
   # Fonctionnement de Davinci Resolve avec les GPU AMD 
