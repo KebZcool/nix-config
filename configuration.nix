@@ -2,7 +2,6 @@
 
 #---------------------------------------------------------------------
 # Kevin Gaillard
-# 
 # My personal NIXOS KDE configuration 
 #---------------------------------------------------------------------
 
@@ -99,10 +98,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -131,12 +126,8 @@
   virtualisation.libvirtd.enable = true;
   services.qemuGuest.enable = true;
 
-  # Install firefox.
-  # programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nix.settings.auto-optimise-store = true;
   
   # Active les flatpak
   services.flatpak.enable = true;
