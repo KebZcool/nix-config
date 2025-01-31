@@ -4,7 +4,7 @@
   # Configuration de LibreWolf (via Firefox)
   programs.firefox = {
     enable = true;
-    package = pkgs.librewolf;
+    #package = pkgs.librewolf; # Installation de librewolf possible
      # Support audio/vidéo via PipeWire
      wrapperConfig = {
        pipewireSupport = true;   
@@ -24,10 +24,7 @@
       #"privacy.fingerprintingProtection" = true;
       #"privacy.resistFingerprinting" = false;
       
-      # Désactivation des fonctionnalités non désirées (pour firefox)
-      #"extensions.pocket.enabled" = false;
-      
-      # Synchronisation (commenté par défaut)
+      # Synchronisation
       # "identity.fxaccounts.enabled" = true;
      };
 
