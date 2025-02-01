@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Configuration de LibreWolf (via Firefox)
   programs.firefox = {
     enable = true;
     #package = pkgs.librewolf; # Installation de librewolf possible
@@ -16,7 +15,6 @@
      /* ---- PREFERENCES ---- */
     # Check about:config for options.
     preferences = {
-      # Configuration des langues
       "intl.accept_languages" = "fr-fr,en-us,en";
       "intl.locale.requested" = "fr,en-US";
       "content.notify.interval" = 100000;
@@ -117,13 +115,10 @@
       "browser.download.open_pdf_attachments_inline" = true;
       "browser.bookmarks.openInTabClosesMenu" = false;
       "browser.menu.showViewImageInfo" = true;
-      "findbar.highlightAll" = true;
-      "layout.word_select.eat_space_to_next_word" = false;  
      };
 
      /* ---- POLICIES ---- */
      # Check about:policies #documentation for options.
-
      # Politiques de sécurité et de confidentialité
     policies = {
       DisableTelemetry = true;
