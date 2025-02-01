@@ -55,7 +55,6 @@
       "permissions.default.desktop-notification" = 2;
       "permissions.default.geo" = 2;
       "browser.search.update" = false;
-      "permissions.manager.defaultsUrl" = "";
       "datareporting.policy.dataSubmissionEnabled" = false;
       "datareporting.healthreport.uploadEnabled" = false;
       "toolkit.telemetry.unified" = false;
