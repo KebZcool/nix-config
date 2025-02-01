@@ -16,18 +16,8 @@
     # Check about:config for options.
     preferences = {
       "intl.accept_languages" = "fr-fr,en-us,en";
-      "intl.locale.requested" = "fr,en-US";
-      "content.notify.interval" = 100000;
-      "gfx.canvas.accelerated.cache-items" = 4096;
-      "gfx.canvas.accelerated.cache-size" = 512;
-      "gfx.content.skia-font-cache-size" = 20;
+      "intl.locale.requested" = "fr,en-US";     
       "browser.cache.disk.enable" = true;
-      "media.memory_cache_max_size" = 65536;
-      "media.cache_readahead_limit" = 7200;
-      "media.cache_resume_threshold" = 3600;
-      "network.http.max-connections" = 1800;
-      "network.http.max-persistent-connections-per-server" = 10;
-      "network.http.max-urgent-start-excessive-connections-per-host" = 5;
       "network.http.pacing.requests.enabled" = false;
       "network.dnsCacheExpiration" = 3600;
       "network.ssl_tokens_cache_capacity" = 10240;
