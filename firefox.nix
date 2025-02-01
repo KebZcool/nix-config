@@ -49,7 +49,7 @@
       "browser.formfill.enable" = false;
       "security.insecure_connection_text.enabled" = true;
       "security.insecure_connection_text.pbmode.enabled" = true;
-      "network.IDN_show_punycode" = true
+      "network.IDN_show_punycode" = true;
       "privacy.userContext.ui.enabled" = true;
       "browser.safebrowsing.downloads.remote.enabled" = false;
       "permissions.default.desktop-notification" = 2;
