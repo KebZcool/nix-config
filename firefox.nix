@@ -27,8 +27,6 @@
       "network.predictor.enabled" = false;
       "network.predictor.enable-prefetch" = false;
       "browser.contentblocking.category" = "strict";
-      "urlclassifier.trackingSkipURLs" = "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com";
-      "urlclassifier.features.socialtracking.skipURLs" = "*.instagram.com, *.twitter.com, *.twimg.com";
       "browser.download.start_downloads_in_tmp_dir" = true;
       "browser.helperApps.deleteTempFileOnExit" = true;
       "browser.uitour.enabled" = false;
@@ -92,19 +90,6 @@
       "browser.profiles.enabled" = true;
       "cookiebanners.service.mode" = 1;
       "cookiebanners.service.mode.privateBrowsing" = 1;
-      "full-screen-api.transition-duration.enter" = "0 0";
-      "full-screen-api.transition-duration.leave" = "0 0";
-      "full-screen-api.warning.timeout" = 0;
-      "browser.urlbar.suggest.calculator" = true;
-      "browser.urlbar.unitConversion.enabled" = true;
-      "browser.urlbar.trending.featureGate" = false;
-      "browser.newtabpage.activity-stream.feeds.topsites" = false;
-      "browser.newtabpage.activity-stream.showWeather" = false;
-      "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
-      "browser.download.manager.addToRecentDocs" = false;
-      "browser.download.open_pdf_attachments_inline" = true;
-      "browser.bookmarks.openInTabClosesMenu" = false;
-      "browser.menu.showViewImageInfo" = true;
      };
 
      /* ---- POLICIES ---- */
