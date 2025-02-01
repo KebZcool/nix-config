@@ -10,15 +10,11 @@
 
 environment.sessionVariables = {
       MANGOHUD_CONFIG = "control=mangohud,legacy_layout=0,horizontal,battery,time,time_format=%H\\:%M,gpu_stats,gpu_power,cpu_stats,ram,vram,fps,frametime=1,frame_timing=1,hud_no_margin,table_columns=14";
-   };
-
+      MANGOHUD = "1";
+ };
  # Steam
   programs.steam = {
    enable = true;
-   extraEnv = {
-       MANGOHUD = true;
-    };
-  };
    remotePlay.openFirewall = true; 
    dedicatedServer.openFirewall = true; 
    localNetworkGameTransfers.openFirewall = true;
