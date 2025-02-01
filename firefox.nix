@@ -19,8 +19,6 @@
       "intl.locale.requested" = "fr,en-US";     
       "browser.cache.disk.enable" = true;
       "network.http.pacing.requests.enabled" = false;
-      "network.dnsCacheExpiration" = 3600;
-      "network.ssl_tokens_cache_capacity" = 10240;
       "network.dns.disablePrefetch" = true;
       "network.dns.disablePrefetchFromHTTPS" = true;
       "network.prefetch-next" = false;
@@ -74,7 +72,6 @@
       "toolkit.coverage.endpoint.base" = "";
       "browser.newtabpage.activity-stream.feeds.telemetry" = false;
       "browser.newtabpage.activity-stream.telemetry" = false;
-      "captivedetect.canonicalURL" = "";
       "network.captive-portal-service.enabled" = false;
       "network.connectivity-service.enabled" = false;
       "browser.privatebrowsing.vpnpromourl" = "";
