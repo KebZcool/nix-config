@@ -17,7 +17,7 @@
       ./firewall.nix
       ./ollama.nix
       ./plymouth.nix
-      ./librewolf.nix
+      ./firefox.nix
       ./packages.nix
       ./optimisation.nix
       ./flatpak.nix
