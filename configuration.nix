@@ -8,7 +8,7 @@
 {
   imports = [
       ./hardware-configuration.nix
-      ./steam.nix
+      ./gaming.nix
       ./vmware.nix
       ./tor.nix
       ./networking.nix 
