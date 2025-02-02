@@ -11,7 +11,7 @@
 ## Structure des fichiers
 
 - **hardware-configuration.nix** : Configuration matérielle générée automatiquement par NixOS.
-- **steam.nix** : Configuration et installation de Steam.
+- **gaming.nix** : Configuration et installation de Steam & Mangohud.
 - **vmware.nix** : Configuration pour VMware.
 - **tor.nix** : Installation et configuration du navigateur Tor (en test).
 - **sh.nix** : Script de shell pour diverses tâches.
@@ -21,7 +21,7 @@
 - **firewall.nix** : Paramétrage du pare-feu.
 - **ollama.nix** : Installation de l'IA locale.
 - **plymouth.nix** : Configuration de Plymouth.
-- **librewolf.nix** : Installation de Firefox ou LibreWolf et configuration.
+- **firefox.nix** : Installation de Firefox ou LibreWolf + configuration.
 - **flatpak.nix** : Fichier pour ajouter ou retirer des applications Flatpak du système.
 - **packages.nix** : Fichier pour ajouter ou retirer des paquets du système.
 - **optimisation.nix** : Script pour le nettoyage et la mise à jour du système.
