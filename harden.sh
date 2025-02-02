@@ -21,7 +21,7 @@ else
     SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 fi
 pushd $SCRIPT_DIR &> /dev/null;
-sudo chown 1000:users .;
+sudo chown 0:0.;
 sudo chown 0:0 configuration.nix;
 sudo chown 0:0 flake.lock;
 sudo chown 0:0 flake.nix
