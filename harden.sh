@@ -30,7 +30,7 @@ sudo chown 0:0 README.md;
 sudo chown 0:0 LICENSE;
 sudo chown 0:0 hardware-configuration.nix;
 sudo chown 1000:1000 home.nix,
-sudo chown 1000:users librewolf.nix;
+sudo chown 1000:users firefox.nix;
 sudo chown 1000:users networking.nix;
 sudo chown 1000:users ollama.nix;
 sudo chown 1000:users optimisation.nix;
@@ -39,7 +39,7 @@ sudo chown 1000:users plymouth.nix;
 sudo chown 1000:users printing.nix;
 sudo chown 1000:users sh.nix;
 sudo chown 1000:users ssh.nix;
-sudo chown 1000:users steam.nix;
+sudo chown 1000:users gaming.nix;
 sudo chown 1000:users tor.nix;
 sudo chown 1000:users vmware;
 sudo chown 1000:users flatpak;
