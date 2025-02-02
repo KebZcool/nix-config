@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 let
-  # Nous pointons directement vers 'gnugrep' au lieu de 'grep'
   grep = pkgs.gnugrep;
 
   # 1. Déclarez les Flatpaks que vous *souhaitez* sur votre système
@@ -12,7 +11,7 @@ in
 {
   system.activationScripts.flatpakManagement = {
     text = ''
-      # 2. Assurez-vous que le dépôt Flathub est ajouté
+      # 2. Dépôt Flathub
       ${pkgs.flatpak}/bin/flatpak remote-add --if-not-exists flathub \
         https://flathub.org/repo/flathub.flatpakrepo
 
