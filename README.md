@@ -16,7 +16,7 @@
 - **tor.nix** : Installation et configuration du navigateur Tor (en test).
 - **sh.nix** : Script de shell pour diverses tâches.
 - **networking.nix** : Configuration réseau.
-- **ssh.nix** : Configuration des clés SSH.
+- **ssh.nix** : Activation du SSH.
 - **printer.nix** : Configuration de l'imprimante.
 - **firewall.nix** : Paramétrage du pare-feu.
 - **ollama.nix** : Installation de l'IA locale.
