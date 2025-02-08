@@ -26,32 +26,6 @@
       ./kde.nix
     ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  # boot.plymouth.enable = true;               # Activates the Plymouth boot splash screen.
-  # boot.plymouth.theme = "breeze";           
-  
- # Configuration des paramètres sysctl
-  boot.kernel.sysctl = {
-    # Protection contre les attaques de type SYN flood
-    "net.ipv4.tcp_syncookies" = 1;
-    
-    # Protections contre le spoofing
-    "net.ipv4.conf.all.rp_filter" = 1;
-    "net.ipv4.conf.default.rp_filter" = 1;
-    
-    # Désactive le routage des paquets
-    "net.ipv4.ip_forward" = 0;
-    
-    # Désactive les réponses aux broadcasts (protection SMURF)
-    "net.ipv4.icmp_echo_ignore_broadcasts" = 1;
-    
-    # Protection contre les attaques SMURF
-    "net.ipv4.icmp_ignore_bogus_error_responses" = 1;
-  };
-
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
@@ -68,20 +42,6 @@
     LC_PAPER = "fr_FR.UTF-8";
     LC_TELEPHONE = "fr_FR.UTF-8";
     LC_TIME = "fr_FR.UTF-8";
-  };
-
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "fr";
-    variant = "azerty";
   };
 
   # Configure console keymap
