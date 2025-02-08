@@ -9,6 +9,9 @@ let
   ];
 in
 {
+  # Active les flatpak
+  services.flatpak.enable = true;
+
   system.activationScripts.flatpakManagement = {
     text = ''
       # 2. Dépôt Flathub
