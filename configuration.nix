@@ -21,6 +21,7 @@
       ./packages.nix
       ./optimisation.nix
       ./flatpak.nix
+      ./pipewire.nix   
     ];
 
   # Bootloader.
