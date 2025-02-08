@@ -10,7 +10,6 @@
       ./hardware-configuration.nix
       ./gaming.nix
       ./vm.nix
-      ./tor.nix
       ./networking.nix 
       ./ssh.nix
       ./printing.nix
