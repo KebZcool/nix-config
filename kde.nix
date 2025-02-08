@@ -4,10 +4,26 @@
 {
   # Activation de KDE
   services = {
-    displayManager.sddm.enable = lib.mkDefault true;
     desktopManager.plasma6.enable = lib.mkDefault true;
   };
 
+  # Required for SDDM
+  qt.style = "breeze";
+
+  security = {
+    polkit = {
+      enable = true;
+    };
+
+  # SDDM
+    displayManager = {
+      sddm = {
+        enable = true;
+        theme = "nord";
+      };
+    };
+  };
+ 
   documentation.nixos.enable = false;
 
   # Packages système
