@@ -1,8 +1,12 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
 
   boot = {
+    tmp.cleanOnBoot = true;
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    kernelPackages = lib.mkDefault pkgs.linuxPackages_zen;
     # Configuration de Plymouth
     plymouth = {
       enable = true;
@@ -28,7 +32,5 @@
       "udev.log_priority=3"
     ];
 
-    # Cacher le choix du système d'exploitation pour les bootloaders.
-    loader.timeout = 0;
   };
 }
