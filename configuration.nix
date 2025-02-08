@@ -69,9 +69,6 @@
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
   services.qemuGuest.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
   
   # Active les flatpak
   services.flatpak.enable = true;
