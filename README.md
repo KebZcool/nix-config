@@ -20,8 +20,11 @@
 - **printer.nix** : Configuration de l'imprimante.
 - **firewall.nix** : Paramétrage du pare-feu.
 - **ollama.nix** : Installation de l'IA locale.
-- **plymouth.nix** : Configuration de Plymouth.
+- **boot.nix** : Configuration de Plymouth/boot & du kernel.
 - **firefox.nix** : Installation de Firefox ou LibreWolf + configuration.
 - **flatpak.nix** : Fichier pour ajouter ou retirer des applications Flatpak du système.
 - **packages.nix** : Fichier pour ajouter ou retirer des paquets du système.
 - **optimisation.nix** : Script pour le nettoyage et la mise à jour du système.
+- **pipewire.nix** : Parametrage de l'audio  
+- **bluetooth.nix** : Activation du bluetooth
+- **kde.nix** : Installation & configuration de KDE
