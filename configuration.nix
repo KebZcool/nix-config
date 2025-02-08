@@ -23,6 +23,7 @@
       ./flatpak.nix
       ./pipewire.nix   
       ./bluetooth.nix
+      ./kde.nix
     ];
 
   # Bootloader.
