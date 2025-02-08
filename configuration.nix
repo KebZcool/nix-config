@@ -22,6 +22,7 @@
       ./optimisation.nix
       ./flatpak.nix
       ./pipewire.nix   
+      ./bluetooth.nix
     ];
 
   # Bootloader.
