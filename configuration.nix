@@ -44,6 +44,8 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
+  nixpkgs.config.allowUnfree = true;
+  
   # Configure console keymap
   console.keyMap = "fr";
 
