@@ -9,7 +9,7 @@
   imports = [
       ./hardware-configuration.nix
       ./gaming.nix
-      ./vmware.nix
+      ./vm.nix
       ./tor.nix
       ./networking.nix 
       ./ssh.nix
