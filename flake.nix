@@ -11,9 +11,6 @@
        lib = nixpkgs.lib;
        system = "x86_64-linux";  
        pkgs = nixpkgs.legacyPackages.${system};
-       nixpkgsConfig = {   
-        allowUnfree = true;
-       };
      in {
     nixosConfigurations = {
       kebOS = nixpkgs.lib.nixosSystem {
