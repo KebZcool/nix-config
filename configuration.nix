@@ -57,6 +57,26 @@
     uid = 1000;
   };
 
+   environment.systemPackages = with pkgs; [
+   # shells
+    fish
+
+    #shell utils
+    bat
+    colordiff
+    curl
+    wget
+
+    # icons
+    papirus-nord
+
+    # cursors
+    nordzy-cursor-theme
+
+    # sddm
+    sddm-themes.nord
+  ];
+
   system.stateVersion = "24.11"; # Did you read the comment?
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];   
