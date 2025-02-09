@@ -8,15 +8,6 @@
   services = {
     desktopManager.plasma6.enable = lib.mkDefault true;
 
-    # SDDM
-    displayManager = {
-      sddm = {
-        enable = true; # This line is necessary to enable SDDM
-        theme = "nord";
-      };
-    };  
-  };  
-
   # Required for SDDM
   qt.style = "breeze";
 
@@ -34,7 +25,7 @@
       enable = true;
       xkb = {
         layout = "fr";
-        model = "pc105";
+        model = "pc104";
         variant = "oss";
         options = "lv3:ralt_switch, compose:sclk, grp:menu_switch";
       };
