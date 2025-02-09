@@ -56,7 +56,6 @@
   };
 
   # SSD 
-  services.fstrim.enable = true;
   fileSystems."home/kebzcool/Saves" =
     { device = "/dev/disk/by-uuid/6b33f298-ad54-4671-bae7-da34725fafd0";
       fsType = "ext4";
