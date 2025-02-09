@@ -23,6 +23,8 @@
       ./pipewire.nix   
       ./bluetooth.nix
       ./kde.nix
+      ./sh.nix
+      ./fstrim.nix
     ];
 
   # Set your time zone.
