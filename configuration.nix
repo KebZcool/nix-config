@@ -18,7 +18,7 @@
       ./boot.nix
       ./firefox.nix
       ./packages.nix
-      ./optimisation.nix
+      ./system.nix
       ./flatpak.nix
       ./pipewire.nix   
       ./bluetooth.nix
